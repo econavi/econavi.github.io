@@ -1,0 +1,416 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="imagetoolbar" content="no"><meta name="msthemecompatible" content="no"><meta name="cleartype" content="on"><meta name="HandheldFriendly" content="True"><!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]--><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="format-detection" content="telephone=no"><meta name="format-detection" content="address=no"><meta name="application-name" content="Библиотека компонентов"><meta name="msapplication-tooltip" content=""><link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="../../assets/img/favicons/manifest.json"><link rel="mask-icon" href="../../assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5"><link rel="shortcut icon" href="../../assets/img/favicons/favicon.ico"><meta name="msapplication-config" content="../../assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><title>Библиотека компонентов</title><meta name="description" content=""><link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;amp;subset=cyrillic" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700&amp;amp;subset=cyrillic" rel="stylesheet"><link href="../../styles/main.min.css" rel="stylesheet"></head><body><header class="header"><div class="header__menu"><nav class="main-menu"><ul class="main-menu__list"><li class="main-menu__item"><a class="main-menu__link" href="/">Home</a></li><li class="main-menu__item"><a class="main-menu__link" href="/libs/components/">Libs</a></li></ul></nav></div><div class="header__logo"><a href="/"><img class="logo" src="../../assets/img/content/logo.svg"></a></div></header><main class="content"><div class="content__wrap"><h1>Библиотека компонентов</h1><section class="components-list"><h2 class="components-list__title">Меню</h2><div class="components-list__item"><div class="sliding-card"><div class="sliding-card__toggle sliding-card__toggle_down"></div><div class="sliding-card__visible-content"><div class="component"><span class="component__id">menu-v1</span><div class="component__area"><nav><ul class="menu-v1"><li class="menu-v1__item"><a class="menu-v1__link" href="javascript:void(0)">О компании</a></li><li class="menu-v1__item"><a class="menu-v1__link menu-v1__link_active">Услуги</a></li><li class="menu-v1__item"><a class="menu-v1__link" href="javascript:void(0)">Сотрудники</a></li><li class="menu-v1__item"><a class="menu-v1__link" href="javascript:void(0)">Контакты</a></li></ul></nav></div></div></div><div class="sliding-card__hidden-content"><div class="code-area"><span class="code-area__header">pug</span><div class="code-area__code-self"><pre><code class="language-jade">ul.menu
+	li.menu__item
+		a.menu__link(href='javascript:void(0)') О компании
+	
+	li.menu__item
+		a.menu__link.menu__link_active Услуги
+	
+	li.menu__item
+		a.menu__link(href='javascript:void(0)') Сотрудники
+	
+	li.menu__item
+		a.menu__link(href='javascript:void(0)') Контакты</code></pre></div></div><div class="code-area"><span class="code-area__header">stylus</span><div class="code-area__code-self"><pre><code class="language-stylus">.menu
+	margin 0
+	padding 0
+	
+	list-style none
+	
+	&__item
+		margin-bottom 8px
+
+	&__link
+		text-decoration none
+		color inherit
+		
+		&:hover
+			text-decoration underline
+		
+		&:active
+			text-decoration none
+		
+		&_active
+			cursor default
+			font-weight bold
+			
+			&:hover
+				text-decoration none
+			
+			&:active
+				text-decoration none</code></pre></div></div><div class="code-area"><span class="code-area__header">javascript</span><div class="code-area__code-self"><pre><code class="language-javascript">/* Для активного пункта меню */
+var links = document.querySelectorAll('.menu__link');
+
+for(var i = 0; i < links.length; i++) {
+	if(links[i].getAttribute('href') == window.location.pathname) {
+		var link = links[i];
+		
+		/* добавить html-класс для стилизации */
+		link.classList.add('menu__link_active');
+		
+		/* удалить атрибут href */
+		link.removeAttribute('href');
+	}
+}</code></pre></div></div></div></div></div><div class="components-list__item"><div class="sliding-card"><div class="sliding-card__toggle sliding-card__toggle_down"></div><div class="sliding-card__visible-content"><div class="component"><span class="component__id">menu-v2</span><div class="component__area"><nav><ul class="menu-v2"><li class="menu-v2__item"><a class="menu-v2__link" href="javascript:void(0)">О компании</a></li><li class="menu-v2__item"><a class="menu-v2__link menu-v2__link_active">Услуги</a></li><li class="menu-v2__item"><a class="menu-v2__link" href="javascript:void(0)">Сотрудники</a></li><li class="menu-v2__item"><a class="menu-v2__link" href="javascript:void(0)">Контакты</a></li></ul></nav></div></div></div><div class="sliding-card__hidden-content"><div class="code-area"><span class="code-area__header">pug</span><div class="code-area__code-self"><pre><code class="language-jade">ul.menu
+	li.menu__item
+		a.menu__link(href='javascript:void(0)') О компании
+	
+	li.menu__item
+		a.menu__link.menu__link_active Услуги
+	
+	li.menu__item
+		a.menu__link(href='javascript:void(0)') Сотрудники
+	
+	li.menu__item
+		a.menu__link(href='javascript:void(0)') Контакты</code></pre></div></div><div class="code-area"><span class="code-area__header">stylus</span><div class="code-area__code-self"><pre><code class="language-stylus">$menu_main-color = #0088cc
+$menu_border-width = 1px
+$menu_padding-link = 10px 14px
+
+.menu
+	margin 0
+	padding 0
+	
+	list-style none
+
+	&__link
+		display block
+		padding $menu_padding-link
+		margin-bottom - $menu_border-width
+
+		text-decoration none
+		
+		color $menu_main-color
+		border $menu_border-width solid $menu_main-color
+
+		&:hover
+			color lighten($menu_main-color, 90%)
+			background lighten($menu_main-color, 40%)
+			border-color lighten($menu_main-color, 40%)
+		
+		&:active
+			color $menu_main-color
+		
+		&_active
+			color lighten($menu_main-color, 90%)
+			background $menu_main-color
+			
+			cursor default
+			
+			&:hover
+				background $menu_main-color
+			
+			&:active
+				color lighten($menu_main-color, 90%)</code></pre></div></div><div class="code-area"><span class="code-area__header">javascript</span><div class="code-area__code-self"><pre><code class="language-javascript">/* Для активного пункта меню */
+var links = document.querySelectorAll('.menu__link');
+
+for(var i = 0; i < links.length; i++) {
+	if(links[i].getAttribute('href') == window.location.pathname) {
+		var link = links[i];
+		
+		/* добавить html-класс для стилизации */
+		link.classList.add('menu__link_active');
+		
+		/* удалить атрибут href */
+		link.removeAttribute('href');
+	}
+}</code></pre></div></div></div></div></div><h2 class="components-list__title">Иконки</h2><div class="components-list__item"><div class="sliding-card"><div class="sliding-card__toggle sliding-card__toggle_down"></div><div class="sliding-card__visible-content"><div class="component"><span class="component__id">icon-chevron</span><div class="component__area"><button class="icon-chevron icon-chevron_has-bg icon-chevron_left" type="button"></button><button class="icon-chevron icon-chevron_has-bg icon-chevron_up" type="button"></button><button class="icon-chevron icon-chevron_has-bg icon-chevron_down" type="button"></button><button class="icon-chevron icon-chevron_has-bg icon-chevron_right" type="button"></button><br><br><button class="icon-chevron icon-chevron_left" type="button"></button><button class="icon-chevron icon-chevron_up" type="button"></button><button class="icon-chevron icon-chevron_down" type="button"></button><button class="icon-chevron icon-chevron_right" type="button"></button></div></div></div><div class="sliding-card__hidden-content"><div class="code-area"><span class="code-area__header">pug</span><div class="code-area__code-self"><pre><code class="language-jade">button(type="button").icon-chevron.icon-chevron_has-bg.icon-chevron_left
+button(type="button").icon-chevron.icon-chevron_has-bg.icon-chevron_up
+button(type="button").icon-chevron.icon-chevron_has-bg.icon-chevron_down
+button(type="button").icon-chevron.icon-chevron_has-bg.icon-chevron_right
+
+button(type="button").icon-chevron.icon-chevron_left
+button(type="button").icon-chevron.icon-chevron_up
+button(type="button").icon-chevron.icon-chevron_down
+button(type="button").icon-chevron.icon-chevron_right</code></pre></div></div><div class="code-area"><span class="code-area__header">stylus</span><div class="code-area__code-self"><pre><code class="language-stylus">$chevron_size = 64px
+$chevron_weight = 2px
+$chevron_color = #0088cc
+$chevron_bg-color = #000
+$chevron_bg-radius = 50%
+
+.icon-chevron
+	position relative
+	
+	display inline-block
+	width $chevron_size
+	height $chevron_size
+	
+	background none
+	border none
+	
+	overflow hidden
+
+	&:active
+		outline-style none
+	
+	&::after
+		content ''
+		position absolute
+		top 50%
+		left 50%
+		
+		width 60%
+		height 60%
+		
+		border-right $chevron_weight solid $chevron_color
+		border-bottom $chevron_weight solid $chevron_color
+		
+		cursor pointer
+		
+	&:hover::after
+		border-color lighten($chevron_color, 50%)
+	
+	&:active::after
+		border-color $chevron_color
+	
+	/* Направления */
+	&_up
+		&::after
+			transform translate(-50%, -30%) rotate(225deg)
+	
+	&_down
+		&::after
+			transform translate(-50%, -70%) rotate(45deg)
+		
+	&_right
+		&::after
+			transform translate(-70%, -50%) rotate(315deg)
+	
+	&_left
+		&::after
+			transform translate(-30%, -50%) rotate(135deg)
+	
+	/* Фон */
+	&_has-bg
+		background $chevron_bg-color
+		border-radius $chevron_bg-radius
+		cursor pointer
+		
+		&:hover
+			background lighten($chevron_bg-color, 10%)
+
+		&::after
+			width 30%
+			height 30%</code></pre></div></div><div class="code-area"><span class="code-area__header">javascript</span><div class="code-area__code-self"><pre><code class="language-javascript">/* Избавиться от системного outline при клике на элементы button */	
+let buttons = document.querySelectorAll('button');
+
+for(let i = 0; i < buttons.length; i++)
+	buttons[i].addEventListener('click', (e) => e.target.blur())</code></pre></div></div></div></div></div><h2 class="components-list__title">Шрифты</h2><div class="components-list__item"><div class="sliding-card"><div class="sliding-card__toggle sliding-card__toggle_down"></div><div class="sliding-card__visible-content"><div class="component"><span class="component__id">responsive-font</span><div class="component__area"><div class="responsive-font"><h1>Жидкая типографика</h1><p>Размер этого шрифта, в пределах заданных значений, зависит от ширины вашего экрана.</p><br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusamus doloremque natus ad facilis cum, deleniti dignissimos, nulla in sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam inventore laudantium incidunt molestias laborum deleniti voluptatum ullam doloribus explicabo?</p></div></div></div></div><div class="sliding-card__hidden-content"><div class="code-area"><span class="code-area__header">pug</span><div class="code-area__code-self"><pre><code class="language-jade">.responsive-font
+	h1 Lorem ipsum dolor
+	p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusamus doloremque natus ad facilis cum, deleniti dignissimos, nulla in sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam inventore laudantium incidunt molestias laborum deleniti voluptatum ullam doloribus explicabo?</code></pre></div></div><div class="code-area"><span class="code-area__header">stylus</span><div class="code-area__code-self"><pre><code class="language-stylus">/*
+	Изменение велечены текста относительно viewport экрана, в приделах заданных размеров.
+	Используется формула Mike Riethmuller: 
+	font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+*/
+
+$setResponsiveFont($smallFont, $bigFont, $smallViewport, $bigViewport)
+	font-size "calc(%s%s + (%s - %s) * ((100vw - %s%s) / (%s - %s)))" \
+	% ($smallFont px $bigFont $smallFont $smallViewport px $bigViewport $smallViewport)
+
+.responsive-font
+	$setResponsiveFont(14, 26, 320, 1600)
+
+	p
+		font-size 1em
+
+	h1
+		font-size 1.5em</code></pre></div></div></div></div></div><h2 class="components-list__title">Резиновые, пропорциональные блоки</h2><div class="components-list__item"><div class="sliding-card"><div class="sliding-card__toggle sliding-card__toggle_down"></div><div class="sliding-card__visible-content"><div class="component"><span class="component__id">proportional-block</span><div class="component__area"><div class="proportional-block"><div class="proportional-block__wrapper"><div class="proportional-block__content"><span>1:1</span></div></div></div><div class="proportional-block"><div class="proportional-block__wrapper proportional-block__wrapper_4x3"><div class="proportional-block__content"><span>4:3</span></div></div></div><div class="proportional-block"><div class="proportional-block__wrapper proportional-block__wrapper_16x9"><div class="proportional-block__content"><span>16:9</span></div></div></div><div class="proportional-block"><div class="proportional-block__wrapper proportional-block__wrapper_1x2"><div class="proportional-block__content"><span>1:2</span></div></div></div></div></div></div><div class="sliding-card__hidden-content"><div class="code-area"><span class="code-area__header">pug</span><div class="code-area__code-self"><pre><code class="language-jade">.proportional-block
+	.proportional-block__wrapper
+		.proportional-block__content
+			span 1:1
+
+.proportional-block
+	.proportional-block__wrapper.proportional-block__wrapper_4x3
+		.proportional-block__content
+			span 4:3
+
+.proportional-block
+	.proportional-block__wrapper.proportional-block__wrapper_16x9
+		.proportional-block__content
+			span 16:9
+
+.proportional-block
+	.proportional-block__wrapper.proportional-block__wrapper_1x2
+		.proportional-block__content
+			span 1:2</code></pre></div></div><div class="code-area"><span class="code-area__header">stylus</span><div class="code-area__code-self"><pre><code class="language-stylus">.proportional-block
+	display block
+	
+	&__wrapper
+		position relative
+		
+		display block
+		padding-top 100%
+		
+		&_1x2
+			padding-top 50%
+			
+		&_4x3
+			padding-top 75%
+			
+		&_16x9
+			padding-top 56.25%
+	
+	&__content
+		position absolute
+		top 0
+		left 0
+		
+		width 100%
+		height 100%</code></pre></div></div></div></div></div><h2 class="components-list__title">Карточка товара</h2><div class="components-list__item"><div class="sliding-card"><div class="sliding-card__toggle sliding-card__toggle_down"></div><div class="sliding-card__visible-content"><div class="component"><span class="component__id">product-card</span><div class="component__area"><div class="product-card-toggle"><div class="view-switch"><div class="view-switch__item view-switch__item_active"><div class="view-switch__item-list"></div></div><div class="view-switch__item"><div class="view-switch__item-matrix"></div></div></div></div><div class="product-card"><div class="product-card__label">Новинка</div><div class="product-card__img-wrapper"><img class="product-card__img" src="http://via.placeholder.com/228x155"></div><div class="product-card__content"><div class="product-card__content-cell"><a class="product-card__title-wrap product-card-title" href="javascript:void">Самый клевый товар, который можно купить!</a><div class="product-card__properties-wrap"><ul class="product-card-properties"><li class="product-card-properties__item"><span class="product-card-properties__title">Артикул:</span><span class="product-card-properties__value">XX-XXXX</span></li><li class="product-card-properties__item"><span class="product-card-properties__title">Производитель:</span><span class="product-card-properties__value">Brand (Китай)</span></li><li class="product-card-properties__item"><span class="product-card-properties__title">Материал:</span><span class="product-card-properties__value">пушистый</span></li></ul></div></div><div class="product-card__content-cell"><div class="product-card__rating-wrap">* * * * *</div><div class="product-card__price-wrap product-card-price"><div class="product-card-price__actual">23 700 р.</div><div class="product-card-price__old">29 000 р.</div></div><div class="product-card__button-wrap"><button type="button">Купить</button></div></div></div></div></div></div></div><div class="sliding-card__hidden-content"><div class="code-area"><span class="code-area__header">pug</span><div class="code-area__code-self"><pre><code class="language-jade">.product-card
+	.product-card__label Новинка
+
+	.product-card__img-wrapper
+		img.product-card__img(src='http://via.placeholder.com/228x155')
+	
+	.product-card__content
+		.product-card__content-cell
+			a.product-card__title-wrap.product-card-title(href='javascript:void') Самый клевый товар, который можно купить!
+			
+			.product-card__properties-wrap
+				ul.product-card-properties
+					li.product-card-properties__item
+						span.product-card-properties__title Артикул:
+						span.product-card-properties__value XX-XXXX
+					li.product-card-properties__item
+						span.product-card-properties__title Производитель:
+						span.product-card-properties__value Brand (Китай)
+					li.product-card-properties__item
+						span.product-card-properties__title Материал:
+						span.product-card-properties__value пушистый
+
+		.product-card__content-cell
+			.product-card__rating-wrap * * * * *
+
+			.product-card__price-wrap.product-card-price
+				.product-card-price__actual 23 700 р.
+				.product-card-price__old 29 000 р.
+		
+			.product-card__button-wrap
+				button(type='button') Купить</code></pre></div></div><div class="code-area"><span class="code-area__header">stylus</span><div class="code-area__code-self"><pre><code class="language-stylus">.product-card
+	position relative
+	
+	display flex
+	
+	border 2px solid #c5c5c5
+	background #fff
+	
+	&__label
+		position absolute
+		top -2px
+		left -2px
+		
+		padding 3px
+		
+		color #fff
+		background #444
+	
+	&__img-wrapper
+		width 228px
+		height 155px
+		overflow hidden
+	
+	&__img
+		max-width 100%
+	
+	&__content
+		flex-grow 1
+		
+		display flex
+		justify-content space-between
+		
+		padding 1.5%
+		
+		color #444
+		
+	&__title-wrap
+		padding-right 15px
+		margin-bottom 10px
+		
+		font-size 21.6px
+	
+	&__properties-wrap
+		padding-right 15px
+		
+	&__rating-wrap
+		margin-bottom 10px
+		text-align right
+	
+	&__price-wrap
+		margin-bottom 10px
+		text-align right
+	
+	&__button-wrap
+		text-align right
+
+
+	// Вертикальное переопределение
+	&_vertical
+		flex-direction column
+		align-items center
+		width 228px
+	
+	&_vertical &__label
+		left auto
+		right -2px
+		
+	&_vertical	&__content
+			flex-direction column
+
+	&_vertical &__content-cell
+		display flex
+		flex-direction column
+		align-items center
+	
+	&_vertical	&__title-wrap
+		padding-top 5px
+		padding-right 0
+		
+		font-size 18px
+		text-align center
+	
+	&_vertical &__properties-wrap
+		display none
+	
+	&_vertical &__price-wrap
+		text-align center
+	
+	&_vertical &__button-wrap
+		padding-bottom 5px
+
+// Блок - загаловок
+.product-card-title
+	display inline-block
+	
+	font-weight bold
+	text-decoration none
+	
+	color #444
+	
+	&:hover
+		text-decoration underline
+	
+	&:active
+		text-decoration none
+
+
+// Блок - свойства товара
+.product-card-properties
+	font-size 15px
+	list-style none
+	
+	&__item
+		padding-bottom: 3px
+	
+	&__title
+		margin-right: 5px
+
+// Блок - цены
+.product-card-price
+	display block
+	white-space nowrap
+
+	&__actual
+		font-size 25.92px
+		
+	&__old
+		font-size 21.6px
+		text-decoration line-through
+		
+		color lighten(#444, 60%)</code></pre></div></div></div></div></div></section></div></main><footer class="footer"><a href="mailto: kochenov.vl@gmail.com">kochenov.vl@gmail.com</a></footer><!--Yandex.Metrika counter--><script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45273525 = new Ya.Metrika({ id:45273525, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45273525" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!--/Yandex.Metrika counter--><script src="../../scripts/main.min.js"></script></body></html>
