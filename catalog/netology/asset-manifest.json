@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/catalog/netology/person-list-app/static/css/main.39566a8b.chunk.css",
+    "main.js": "/catalog/netology/person-list-app/static/js/main.9c819669.chunk.js",
+    "main.js.map": "/catalog/netology/person-list-app/static/js/main.9c819669.chunk.js.map",
+    "runtime~main.js": "/catalog/netology/person-list-app/static/js/runtime~main.7a6dbab7.js",
+    "runtime~main.js.map": "/catalog/netology/person-list-app/static/js/runtime~main.7a6dbab7.js.map",
+    "static/js/2.9369287a.chunk.js": "/catalog/netology/person-list-app/static/js/2.9369287a.chunk.js",
+    "static/js/2.9369287a.chunk.js.map": "/catalog/netology/person-list-app/static/js/2.9369287a.chunk.js.map",
+    "index.html": "/catalog/netology/person-list-app/index.html",
+    "precache-manifest.7b90b4990197cff975314914a5eb1fa4.js": "/catalog/netology/person-list-app/precache-manifest.7b90b4990197cff975314914a5eb1fa4.js",
+    "service-worker.js": "/catalog/netology/person-list-app/service-worker.js",
+    "static/css/main.39566a8b.chunk.css.map": "/catalog/netology/person-list-app/static/css/main.39566a8b.chunk.css.map",
+    "static/media/netology-group-logo.svg": "/catalog/netology/person-list-app/static/media/netology-group-logo.83c80085.svg"
+  }
+}
