@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Главная страница</title>
+    <meta name="description" content="Описание главной страницы">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="imagetoolbar" content="no">
+    <meta name="msthemecompatible" content="no">
+    <meta name="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True"><!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="application-name" content="Главная страница">
+    <meta name="msapplication-tooltip" content="Описание главной страницы">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/styles/build.min.css" rel="stylesheet">
+  </head>
+  <body class="page">
+    <div class="page__inner">
+      <header class="page__main-nav">
+        <nav class="main-nav content-container"><a class="main-nav__logo" href="/"><img src="/assets/img/logo.svg" alt="Logo" width="106" height="64"/></a>
+          <div class="main-nav__menu js-main-menu">
+            <ul class="main-menu">
+              <li class="main-menu__item"><a class="main-menu__link" href="/">Главная</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="/pages/ui-kit.html">UI-KIT</a></li>
+            </ul>
+          </div>
+          <div class="main-nav__menu-switcher js-main-menu-switcher">
+            <button class="burger js-burger"><span class="burger__icon"></span></button>
+          </div>
+        </nav>
+      </header>
+      <main class="page__content">
+        <section class="section-main content-container catalog">
+          <div class="catalog__header">
+            <h1>Аккумуляторные батареи</h1>
+            <div class="catalog__view-switcher js-catalog-view-switcher">
+              <fieldset class="view-switcher">
+                <input class="view-switcher__input" type="radio" name="view-switcher" id="vs-modules" value="modules" checked>
+                <label class="view-switcher__btn view-switcher__btn--modules" for="vs-modules" aria-label="Вид плиткой"></label>
+                <input class="view-switcher__input" type="radio" name="view-switcher" id="vs-list" value="list">
+                <label class="view-switcher__btn view-switcher__btn--list" for="vs-list" aria-label="Вид списком"></label>
+              </fieldset>
+            </div>
+          </div>
+          <div class="catalog__main">
+            <form class="catalog__sidebar">
+              <button class="catalog__sidebar-top button button--secondary button--round button--reset" type="reset">Сбросить всё</button>
+              <ul class="filters">
+                <li class="filters__item">
+                  <div class="accordion">
+                    <div class="accordion__header">Категория</div>
+                    <div class="accordion__body">
+                      <div class="accordion__content">
+                        <ul class="filter-list">
+                          <li class="filter-list__item">
+                            <label class="check">
+                              <input class="check__input" type="checkbox"/><span class="check__box"> </span><span class="check__label">Аккумуляторные батареи</span><span class="check__total">(119)</span>
+                            </label>
+                          </li>
+                          <li class="filter-list__item">
+                            <label class="check">
+                              <input class="check__input" type="checkbox" disabled="disabled"/><span class="check__box"> </span><span class="check__label">Фаркопры</span><span class="check__total">(0)</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="filters__item">
+                  <div class="filter accordion"><span class="accordion__header">Бренд</span>
+                    <div class="accordion__body">
+                      <div class="accordion__content">
+                        <ul class="filter-list">
+                          <li class="filter-list__item">
+                            <label class="check">
+                              <input class="check__input" type="checkbox"/><span class="check__box"> </span><span class="check__label">Bosch</span><span class="check__total">(64)</span>
+                            </label>
+                          </li>
+                          <li class="filter-list__item">
+                            <label class="check">
+                              <input class="check__input" type="checkbox"/><span class="check__box"> </span><span class="check__label">Varta</span><span class="check__total">(55)</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="filters__item">
+                  <div class="filter accordion"><span class="accordion__header">Полярность</span>
+                    <div class="accordion__body">
+                      <div class="accordion__content">
+                        <ul class="filter-list">
+                          <li class="filter-list__item">
+                            <label class="check">
+                              <input class="check__input" type="checkbox"/><span class="check__box"> </span><span class="check__label">+/-</span><span class="check__total">(98)</span>
+                            </label>
+                          </li>
+                          <li class="filter-list__item">
+                            <label class="check">
+                              <input class="check__input" type="checkbox"/><span class="check__box"> </span><span class="check__label">-/+</span><span class="check__total">(21)</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="filters__item">
+                  <div class="filter accordion"><span class="accordion__header">Длина</span>
+                    <div class="accordion__body">
+                      <div class="accordion__content">
+                        <ul class="filter-list">
+                          <li class="filter-list__item">
+                            <label class="check">
+                              <input class="check__input" type="checkbox"/><span class="check__box"> </span><span class="check__label">54 см</span><span class="check__total">(49)</span>
+                            </label>
+                          </li>
+                          <li class="filter-list__item">
+                            <label class="check">
+                              <input class="check__input" type="checkbox" disabled="disabled"/><span class="check__box"> </span><span class="check__label">58 см</span><span class="check__total">(0)</span>
+                            </label>
+                          </li>
+                          <li class="filter-list__item">
+                            <label class="check">
+                              <input class="check__input" type="checkbox"/><span class="check__box"> </span><span class="check__label">63 см</span><span class="check__total">(70)</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </form>
+            <div class="catalog__list">
+              <div class="catalog-list js-catalog-list">
+                <div class="catalog-list__item">
+                  <article class="product-card">
+                    <div class="product-card__inner">
+                      <div class="product-card__photo"><img src="/assets/img/akb/akb6.jpg" alt=""/></div>
+                      <div class="product-card__content">
+                        <div class="product-card__rating">
+                          <fieldset class="rating">
+                            <div class="rating__group">
+                              <input class="rating__input" type="radio" name="536093" id="536093-a" value="1"/>
+                              <label class="rating__star" for="536093-a" aria-label="Ужасно"></label>
+                              <input class="rating__input" type="radio" name="536093" id="536093-b" value="2"/>
+                              <label class="rating__star" for="536093-b" aria-label="Сносно"></label>
+                              <input class="rating__input" type="radio" name="536093" id="536093-c" value="3"/>
+                              <label class="rating__star" for="536093-c" aria-label="Нормально"></label>
+                              <input class="rating__input" type="radio" name="536093" id="536093-d" value="4"/>
+                              <label class="rating__star" for="536093-d" aria-label="Хорошо"></label>
+                              <input class="rating__input" type="radio" name="536093" id="536093-e" value="5"/>
+                              <label class="rating__star" for="536093-e" aria-label="Отлично"></label>
+                            </div>
+                          </fieldset>
+                        </div><a class="product-card__title" href="javascript:void(0)">Аккумулятор Bosch S4 70Ah 630A 261x175x220</a>
+                        <div class="product-card__footer">
+                          <div class="product-card__row"><span class="product-card__price">5 460 ₽</span>
+                            <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                          </div>
+                          <div class="product-card__row">
+                            <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="catalog-list__item">
+                  <article class="product-card">
+                    <div class="product-card__inner">
+                      <div class="product-card__photo"><img src="/assets/img/akb/akb2.jpg" alt=""/></div>
+                      <div class="product-card__content">
+                        <div class="product-card__rating">
+                          <fieldset class="rating">
+                            <div class="rating__group">
+                              <input class="rating__input" type="radio" name="307172" id="307172-a" value="1"/>
+                              <label class="rating__star" for="307172-a" aria-label="Ужасно"></label>
+                              <input class="rating__input" type="radio" name="307172" id="307172-b" value="2"/>
+                              <label class="rating__star" for="307172-b" aria-label="Сносно"></label>
+                              <input class="rating__input" type="radio" name="307172" id="307172-c" value="3"/>
+                              <label class="rating__star" for="307172-c" aria-label="Нормально"></label>
+                              <input class="rating__input" type="radio" name="307172" id="307172-d" value="4"/>
+                              <label class="rating__star" for="307172-d" aria-label="Хорошо"></label>
+                              <input class="rating__input" type="radio" name="307172" id="307172-e" value="5"/>
+                              <label class="rating__star" for="307172-e" aria-label="Отлично"></label>
+                            </div>
+                          </fieldset>
+                        </div><a class="product-card__title" href="javascript:void(0)">Аккумулятор Bosch S4 60Ah 540A 242x175x190 (-+) №0092S40050</a>
+                        <div class="product-card__footer">
+                          <div class="product-card__row"><span class="product-card__price">6 416 ₽</span>
+                            <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                          </div>
+                          <div class="product-card__row">
+                            <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="catalog-list__item">
+                  <article class="product-card">
+                    <div class="product-card__inner">
+                      <div class="product-card__photo"><img src="/assets/img/akb/akb3.jpg" alt=""/></div>
+                      <div class="product-card__content">
+                        <div class="product-card__rating">
+                          <fieldset class="rating">
+                            <div class="rating__group">
+                              <input class="rating__input" type="radio" name="4767" id="4767-a" value="1"/>
+                              <label class="rating__star" for="4767-a" aria-label="Ужасно"></label>
+                              <input class="rating__input" type="radio" name="4767" id="4767-b" value="2"/>
+                              <label class="rating__star" for="4767-b" aria-label="Сносно"></label>
+                              <input class="rating__input" type="radio" name="4767" id="4767-c" value="3"/>
+                              <label class="rating__star" for="4767-c" aria-label="Нормально"></label>
+                              <input class="rating__input" type="radio" name="4767" id="4767-d" value="4"/>
+                              <label class="rating__star" for="4767-d" aria-label="Хорошо"></label>
+                              <input class="rating__input" type="radio" name="4767" id="4767-e" value="5"/>
+                              <label class="rating__star" for="4767-e" aria-label="Отлично"></label>
+                            </div>
+                          </fieldset>
+                        </div><a class="product-card__title" href="javascript:void(0)">Аккумулятор Exide Excell 45Ah 300A №EB457</a>
+                        <div class="product-card__footer">
+                          <div class="product-card__row"><span class="product-card__price">10 440 ₽</span>
+                            <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                          </div>
+                          <div class="product-card__row">
+                            <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="catalog-list__item">
+                  <article class="product-card">
+                    <div class="product-card__inner">
+                      <div class="product-card__photo"><img src="/assets/img/akb/akb1.jpg" alt=""/></div>
+                      <div class="product-card__content">
+                        <div class="product-card__rating">
+                          <fieldset class="rating">
+                            <div class="rating__group">
+                              <input class="rating__input" type="radio" name="224616" id="224616-a" value="1"/>
+                              <label class="rating__star" for="224616-a" aria-label="Ужасно"></label>
+                              <input class="rating__input" type="radio" name="224616" id="224616-b" value="2"/>
+                              <label class="rating__star" for="224616-b" aria-label="Сносно"></label>
+                              <input class="rating__input" type="radio" name="224616" id="224616-c" value="3"/>
+                              <label class="rating__star" for="224616-c" aria-label="Нормально"></label>
+                              <input class="rating__input" type="radio" name="224616" id="224616-d" value="4"/>
+                              <label class="rating__star" for="224616-d" aria-label="Хорошо"></label>
+                              <input class="rating__input" type="radio" name="224616" id="224616-e" value="5"/>
+                              <label class="rating__star" for="224616-e" aria-label="Отлично"></label>
+                            </div>
+                          </fieldset>
+                        </div><a class="product-card__title" href="javascript:void(0)">Аккумулятор Exide Excell 35Ah 240A 242x175x190 (-+) №0092S40050</a>
+                        <div class="product-card__footer">
+                          <div class="product-card__row"><span class="product-card__price">9 000 ₽</span>
+                            <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                          </div>
+                          <div class="product-card__row">
+                            <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="catalog-list__item">
+                  <article class="product-card">
+                    <div class="product-card__inner">
+                      <div class="product-card__photo"><img src="/assets/img/akb/akb3.jpg" alt=""/></div>
+                      <div class="product-card__content">
+                        <div class="product-card__rating">
+                          <fieldset class="rating">
+                            <div class="rating__group">
+                              <input class="rating__input" type="radio" name="449143" id="449143-a" value="1"/>
+                              <label class="rating__star" for="449143-a" aria-label="Ужасно"></label>
+                              <input class="rating__input" type="radio" name="449143" id="449143-b" value="2"/>
+                              <label class="rating__star" for="449143-b" aria-label="Сносно"></label>
+                              <input class="rating__input" type="radio" name="449143" id="449143-c" value="3"/>
+                              <label class="rating__star" for="449143-c" aria-label="Нормально"></label>
+                              <input class="rating__input" type="radio" name="449143" id="449143-d" value="4"/>
+                              <label class="rating__star" for="449143-d" aria-label="Хорошо"></label>
+                              <input class="rating__input" type="radio" name="449143" id="449143-e" value="5"/>
+                              <label class="rating__star" for="449143-e" aria-label="Отлично"></label>
+                            </div>
+                          </fieldset>
+                        </div><a class="product-card__title" href="javascript:void(0)">Аккумулятор Bolk 132Ah 870A 513x189x213 прям R+</a>
+                        <div class="product-card__footer">
+                          <div class="product-card__row"><span class="product-card__price">5 941 ₽</span>
+                            <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                          </div>
+                          <div class="product-card__row">
+                            <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="catalog-list__item">
+                  <article class="product-card">
+                    <div class="product-card__inner">
+                      <div class="product-card__photo"><img src="/assets/img/akb/akb6.jpg" alt=""/></div>
+                      <div class="product-card__content">
+                        <div class="product-card__rating">
+                          <fieldset class="rating">
+                            <div class="rating__group">
+                              <input class="rating__input" type="radio" name="150092" id="150092-a" value="1"/>
+                              <label class="rating__star" for="150092-a" aria-label="Ужасно"></label>
+                              <input class="rating__input" type="radio" name="150092" id="150092-b" value="2"/>
+                              <label class="rating__star" for="150092-b" aria-label="Сносно"></label>
+                              <input class="rating__input" type="radio" name="150092" id="150092-c" value="3"/>
+                              <label class="rating__star" for="150092-c" aria-label="Нормально"></label>
+                              <input class="rating__input" type="radio" name="150092" id="150092-d" value="4"/>
+                              <label class="rating__star" for="150092-d" aria-label="Хорошо"></label>
+                              <input class="rating__input" type="radio" name="150092" id="150092-e" value="5"/>
+                              <label class="rating__star" for="150092-e" aria-label="Отлично"></label>
+                            </div>
+                          </fieldset>
+                        </div><a class="product-card__title" href="javascript:void(0)">Аккумулятор Tudor Starter 55Ah 460A 242x175x190</a>
+                        <div class="product-card__footer">
+                          <div class="product-card__row"><span class="product-card__price">10 104 ₽</span>
+                            <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                          </div>
+                          <div class="product-card__row">
+                            <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="catalog__list-nav">
+                <div class="pagination">
+                  <div class="pagination__list">
+                    <button class="pagination__list-item is-active" type="button">1</button>
+                    <button class="pagination__list-item" type="button">2</button>
+                    <button class="pagination__list-item" type="button">3</button>
+                    <button class="pagination__list-item" type="button">4</button>
+                    <button class="pagination__list-item" type="button">5</button>
+                  </div>
+                  <button class="pagination__control pagination__control--left is-disable" type="button"></button>
+                  <button class="pagination__control pagination__control--right" type="button"></button>
+                </div>
+                <select class="form-select form-input form-input--inline">
+                  <option>10</option>
+                  <option>20</option>
+                  <option>30</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-main section-main--bg-color reviewed">
+          <div class="content-container">
+            <div class="section-main__title section-main__title--center">
+              <h2 class="reviewed__title">Недавно вы смотрели</h2>
+              <div class="reviewed-slider swiper-container js-reviewed-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="product-card  product-card--simple">
+                      <div class="product-card__inner">
+                        <div class="product-card__photo"><img src="/assets/img/akb/akb6.jpg" alt=""/></div>
+                        <div class="product-card__content"><a class="product-card__title" href="javascript:void(0)">Аккумулятор Bosch S4 70Ah 630A 261x175x220</a>
+                          <div class="product-card__footer">
+                            <div class="product-card__row"><span class="product-card__price">5 460 ₽</span>
+                              <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                            </div>
+                            <div class="product-card__row">
+                              <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card  product-card--simple">
+                      <div class="product-card__inner">
+                        <div class="product-card__photo"><img src="/assets/img/akb/akb2.jpg" alt=""/></div>
+                        <div class="product-card__content"><a class="product-card__title" href="javascript:void(0)">Аккумулятор Bosch S4 60Ah 540A 242x175x190 (-+) №0092S40050</a>
+                          <div class="product-card__footer">
+                            <div class="product-card__row"><span class="product-card__price">6 416 ₽</span>
+                              <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                            </div>
+                            <div class="product-card__row">
+                              <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card  product-card--simple">
+                      <div class="product-card__inner">
+                        <div class="product-card__photo"><img src="/assets/img/akb/akb3.jpg" alt=""/></div>
+                        <div class="product-card__content"><a class="product-card__title" href="javascript:void(0)">Аккумулятор Exide Excell 45Ah 300A №EB457</a>
+                          <div class="product-card__footer">
+                            <div class="product-card__row"><span class="product-card__price">10 440 ₽</span>
+                              <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                            </div>
+                            <div class="product-card__row">
+                              <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card  product-card--simple">
+                      <div class="product-card__inner">
+                        <div class="product-card__photo"><img src="/assets/img/akb/akb1.jpg" alt=""/></div>
+                        <div class="product-card__content"><a class="product-card__title" href="javascript:void(0)">Аккумулятор Exide Excell 35Ah 240A 242x175x190 (-+) №0092S40050</a>
+                          <div class="product-card__footer">
+                            <div class="product-card__row"><span class="product-card__price">9 000 ₽</span>
+                              <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                            </div>
+                            <div class="product-card__row">
+                              <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card  product-card--simple">
+                      <div class="product-card__inner">
+                        <div class="product-card__photo"><img src="/assets/img/akb/akb3.jpg" alt=""/></div>
+                        <div class="product-card__content"><a class="product-card__title" href="javascript:void(0)">Аккумулятор Bolk 132Ah 870A 513x189x213 прям R+</a>
+                          <div class="product-card__footer">
+                            <div class="product-card__row"><span class="product-card__price">5 941 ₽</span>
+                              <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                            </div>
+                            <div class="product-card__row">
+                              <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card  product-card--simple">
+                      <div class="product-card__inner">
+                        <div class="product-card__photo"><img src="/assets/img/akb/akb6.jpg" alt=""/></div>
+                        <div class="product-card__content"><a class="product-card__title" href="javascript:void(0)">Аккумулятор Tudor Starter 55Ah 460A 242x175x190</a>
+                          <div class="product-card__footer">
+                            <div class="product-card__row"><span class="product-card__price">10 104 ₽</span>
+                              <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                            </div>
+                            <div class="product-card__row">
+                              <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="reviewed-slider__control">
+                  <button class="reviewed-slider__prev swiper-button-prev" type="button"></button>
+                  <button class="reviewed-slider__next swiper-button-next" type="button"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/scripts/bundle.min.js"></script>
+    <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45273525 = new Ya.Metrika({ id:45273525, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45273525" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  </body>
+</html>

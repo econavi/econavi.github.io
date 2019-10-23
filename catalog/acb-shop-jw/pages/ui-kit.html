@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>UI-Kit</title>
+    <meta name="description" content="UI-Kit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="imagetoolbar" content="no">
+    <meta name="msthemecompatible" content="no">
+    <meta name="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True"><!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="application-name" content="UI-Kit">
+    <meta name="msapplication-tooltip" content="UI-Kit">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/styles/build.min.css" rel="stylesheet">
+  </head>
+  <body class="page">
+    <div class="page__inner">
+      <header class="page__main-nav">
+        <nav class="main-nav content-container"><a class="main-nav__logo" href="/"><img src="/assets/img/logo.svg" alt="Logo" width="106" height="64"/></a>
+          <div class="main-nav__menu js-main-menu">
+            <ul class="main-menu">
+              <li class="main-menu__item"><a class="main-menu__link" href="/">Главная</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="/pages/ui-kit.html">UI-KIT</a></li>
+            </ul>
+          </div>
+          <div class="main-nav__menu-switcher js-main-menu-switcher">
+            <button class="burger js-burger"><span class="burger__icon"></span></button>
+          </div>
+        </nav>
+      </header>
+      <main class="page__content">
+        <div class="section-main content-container">
+          <h1>UI-Kit</h1>
+          <div class="ui-kit">
+            <div class="ui-section">
+              <h2 class="ui-section__title">Star Rating</h2>
+              <div class="ui-section__component">
+                <div class="ui-section__line">
+                  <fieldset class="rating">
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="cat1" id="cat1-a" value="1"/>
+                      <label class="rating__star" for="cat1-a" aria-label="Ужасно"></label>
+                      <input class="rating__input" type="radio" name="cat1" id="cat1-b" value="2"/>
+                      <label class="rating__star" for="cat1-b" aria-label="Сносно"></label>
+                      <input class="rating__input" type="radio" name="cat1" id="cat1-c" value="3"/>
+                      <label class="rating__star" for="cat1-c" aria-label="Нормально"></label>
+                      <input class="rating__input" type="radio" name="cat1" id="cat1-d" value="4"/>
+                      <label class="rating__star" for="cat1-d" aria-label="Хорошо"></label>
+                      <input class="rating__input" type="radio" name="cat1" id="cat1-e" value="5"/>
+                      <label class="rating__star" for="cat1-e" aria-label="Отлично"></label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="ui-section__line">
+                  <fieldset class="rating">
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="cat2" id="cat2-a" value="1"/>
+                      <label class="rating__star" for="cat2-a" aria-label="Ужасно"></label>
+                      <input class="rating__input" type="radio" name="cat2" id="cat2-b" value="2"/>
+                      <label class="rating__star" for="cat2-b" aria-label="Сносно"></label>
+                      <input class="rating__input" type="radio" name="cat2" id="cat2-c" value="3"/>
+                      <label class="rating__star" for="cat2-c" aria-label="Нормально"></label>
+                      <input class="rating__input" type="radio" name="cat2" id="cat2-d" value="4"/>
+                      <label class="rating__star" for="cat2-d" aria-label="Хорошо"></label>
+                      <input class="rating__input" type="radio" name="cat2" id="cat2-e" value="5"/>
+                      <label class="rating__star" for="cat2-e" aria-label="Отлично"></label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="ui-section__description">
+                <p>Блок: rating</p>
+                <p>Mixin Pug: +rating('cat1')</p>
+                <p>Принимает строку с уникальным id</p>
+              </div>
+            </div>
+            <div class="ui-section">
+              <h2 class="ui-section__title">Custom checkbox</h2>
+              <div class="ui-section__component">
+                <div class="ui-section__line">
+                  <label class="check">
+                    <input class="check__input" type="checkbox"/><span class="check__box"> </span><span class="check__label">Checkbox</span>
+                  </label>
+                </div>
+                <div class="ui-section__line">
+                  <label class="check">
+                    <input class="check__input" type="checkbox" checked="checked"/><span class="check__box"> </span><span class="check__label">Checkbox</span>
+                  </label>
+                </div>
+                <div class="ui-section__line">
+                  <label class="check">
+                    <input class="check__input" type="checkbox" disabled="disabled"/><span class="check__box"> </span><span class="check__label">Checkbox</span>
+                  </label>
+                </div>
+                <div class="ui-section__line">
+                  <label class="check">
+                    <input class="check__input" type="checkbox" checked="checked" disabled="disabled"/><span class="check__box"> </span><span class="check__label">Checkbox</span>
+                  </label>
+                </div>
+              </div>
+              <div class="ui-section__description">
+                <p>Блок: check</p>
+                <p>Mixin pug:</p>
+                <pre> <code> +checkbox({
+   name: 'Фаркопры',
+   total: '(0)',
+   attrs: {
+     disabled: true
+   },
+ })</code></pre>
+              </div>
+            </div>
+            <div class="ui-section">
+              <h2 class="ui-section__title">Accordion</h2>
+              <div class="ui-section__component">
+                <div class="ui-section__line">
+                  <div class="accordion">
+                    <h2 class="accordion__header">Accordion 1</h2>
+                    <div class="accordion__body">
+                      <div class="accordion__content"></div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui-section__line">
+                  <div class="accordion">
+                    <h2 class="accordion__header">Accordion 2</h2>
+                    <div class="accordion__body">
+                      <div class="accordion__content">
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic..</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-section__description">
+                <p>Блок: accordion</p>
+              </div>
+            </div>
+            <div class="ui-section">
+              <h2 class="ui-section__title">View switcher</h2>
+              <div class="ui-section__component">
+                <div class="ui-section__line ui-view-switcher">
+                  <fieldset class="view-switcher">
+                    <input class="view-switcher__input" type="radio" name="view-switcher" id="vs-modules" value="modules" checked>
+                    <label class="view-switcher__btn view-switcher__btn--modules" for="vs-modules" aria-label="Вид плиткой"></label>
+                    <input class="view-switcher__input" type="radio" name="view-switcher" id="vs-list" value="list">
+                    <label class="view-switcher__btn view-switcher__btn--list" for="vs-list" aria-label="Вид списком"></label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="ui-section__description">
+                <p>Блок: view-switcher</p>
+              </div>
+            </div>
+            <div class="ui-section">
+              <h2 class="ui-section__title">Buttons</h2>
+              <div class="ui-section__component">
+                <div class="ui-section__line">
+                  <button class="button button--inline" type="button">Inline</button>
+                </div>
+                <div class="ui-section__line"> 
+                  <button class="button button--inline button--primary button--round" type="button">Rounded</button>
+                </div>
+                <div class="ui-section__line">
+                  <button class="button" type="button">Ghost</button>
+                </div>
+                <div class="ui-section__line"> 
+                  <button class="button button--primary" type="button">Primary</button>
+                </div>
+                <div class="ui-section__line"> 
+                  <button class="button button--secondary" type="button">Secondary</button>
+                </div>
+                <div class="ui-section__line"> 
+                  <button class="button button--secondary button--reset" type="button">Reset</button>
+                </div>
+              </div>
+              <div class="ui-section__description">
+                <p>Блок: button</p>
+                <p>Модификаторы: --inline, --primary, --secondary, --round, --reset</p>
+              </div>
+            </div>
+            <div class="ui-section">
+              <h2 class="ui-section__title">Product Card</h2>
+              <div class="ui-section__component">
+                <div class="ui-section__line ui-mw-300">
+                  <article class="product-card">
+                    <div class="product-card__inner">
+                      <div class="product-card__photo"><img src="/assets/img/akb/akb1.jpg" alt=""/></div>
+                      <div class="product-card__content">
+                        <div class="product-card__rating">
+                          <fieldset class="rating">
+                            <div class="rating__group">
+                              <input class="rating__input" type="radio" name="308692" id="308692-a" value="1"/>
+                              <label class="rating__star" for="308692-a" aria-label="Ужасно"></label>
+                              <input class="rating__input" type="radio" name="308692" id="308692-b" value="2"/>
+                              <label class="rating__star" for="308692-b" aria-label="Сносно"></label>
+                              <input class="rating__input" type="radio" name="308692" id="308692-c" value="3"/>
+                              <label class="rating__star" for="308692-c" aria-label="Нормально"></label>
+                              <input class="rating__input" type="radio" name="308692" id="308692-d" value="4"/>
+                              <label class="rating__star" for="308692-d" aria-label="Хорошо"></label>
+                              <input class="rating__input" type="radio" name="308692" id="308692-e" value="5"/>
+                              <label class="rating__star" for="308692-e" aria-label="Отлично"></label>
+                            </div>
+                          </fieldset>
+                        </div><a class="product-card__title" href="javascript:void(0)">Аккумулятор Bosch S4 70Ah 630A 261x175x220</a>
+                        <div class="product-card__footer">
+                          <div class="product-card__row"><span class="product-card__price">9 000 ₽</span>
+                            <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                          </div>
+                          <div class="product-card__row">
+                            <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="ui-section__line ui-mw-300">
+                  <article class="product-card  product-card--simple">
+                    <div class="product-card__inner">
+                      <div class="product-card__photo"><img src="/assets/img/akb/akb1.jpg" alt=""/></div>
+                      <div class="product-card__content"><a class="product-card__title" href="javascript:void(0)">Аккумулятор Bosch S4 70Ah 630A 261x175x220</a>
+                        <div class="product-card__footer">
+                          <div class="product-card__row"><span class="product-card__price">9 000 ₽</span>
+                            <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                          </div>
+                          <div class="product-card__row">
+                            <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="ui-section__line">
+                  <article class="product-card  product-card--h">
+                    <div class="product-card__inner">
+                      <div class="product-card__photo"><img src="/assets/img/akb/akb1.jpg" alt=""/></div>
+                      <div class="product-card__content">
+                        <div class="product-card__rating">
+                          <fieldset class="rating">
+                            <div class="rating__group">
+                              <input class="rating__input" type="radio" name="314961" id="314961-a" value="1"/>
+                              <label class="rating__star" for="314961-a" aria-label="Ужасно"></label>
+                              <input class="rating__input" type="radio" name="314961" id="314961-b" value="2"/>
+                              <label class="rating__star" for="314961-b" aria-label="Сносно"></label>
+                              <input class="rating__input" type="radio" name="314961" id="314961-c" value="3"/>
+                              <label class="rating__star" for="314961-c" aria-label="Нормально"></label>
+                              <input class="rating__input" type="radio" name="314961" id="314961-d" value="4"/>
+                              <label class="rating__star" for="314961-d" aria-label="Хорошо"></label>
+                              <input class="rating__input" type="radio" name="314961" id="314961-e" value="5"/>
+                              <label class="rating__star" for="314961-e" aria-label="Отлично"></label>
+                            </div>
+                          </fieldset>
+                        </div><a class="product-card__title" href="javascript:void(0)">Аккумулятор Bosch S4 70Ah 630A 261x175x220</a>
+                        <div class="product-card__footer">
+                          <div class="product-card__row"><span class="product-card__price">9 000 ₽</span>
+                            <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                          </div>
+                          <div class="product-card__row">
+                            <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="ui-section__line">
+                  <article class="product-card  product-card--h product-card--simple">
+                    <div class="product-card__inner">
+                      <div class="product-card__photo"><img src="/assets/img/akb/akb1.jpg" alt=""/></div>
+                      <div class="product-card__content"><a class="product-card__title" href="javascript:void(0)">Аккумулятор Bosch S4 70Ah 630A 261x175x220</a>
+                        <div class="product-card__footer">
+                          <div class="product-card__row"><span class="product-card__price">9 000 ₽</span>
+                            <button class="product-card__buy-btn button button--primary button--inline button--round" type="button">В корзину</button>
+                          </div>
+                          <div class="product-card__row">
+                            <button class="product-card__compare" type="button">Сравнить</button><span class="product-card__stock">В наличии</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="ui-section__description">
+                <p>Блок: product-card</p>
+                <p>Модификаторы: --h, --simple</p>
+                <p>Mixin pug:</p>
+                <pre> <code>+productCard({
+   img: '/assets/img/akb/akb1.jpg',
+   name: 'Аккумулятор Bosch S4 70Ah 630A 261x175x220',
+   price: 9000,
+ }, 'h')</code></pre>
+              </div>
+            </div>
+            <div class="ui-section">
+              <h2 class="ui-section__title">Form select</h2>
+              <div class="ui-section__component">
+                <div class="ui-section__line ui-mw-300">
+                  <select class="form-select form-input">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                  </select>
+                </div>
+              </div>
+              <div class="ui-section__description">
+                <p>Смесь блоков: form-input, form-select</p>
+              </div>
+            </div>
+            <div class="ui-section">
+              <h2 class="ui-section__title">Pagination</h2>
+              <div class="ui-section__component">
+                <div class="ui-section__line">
+                  <div class="pagination">
+                    <div class="pagination__list">
+                      <button class="pagination__list-item is-active" type="button">1</button>
+                      <button class="pagination__list-item" type="button">2</button>
+                      <button class="pagination__list-item" type="button">3</button>
+                      <button class="pagination__list-item" type="button">4</button>
+                      <button class="pagination__list-item" type="button">5</button>
+                    </div>
+                    <button class="pagination__control pagination__control--left is-disable" type="button"></button>
+                    <button class="pagination__control pagination__control--right" type="button"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-section__description">
+                <p>Блок: pagination</p>
+              </div>
+            </div>
+            <div class="ui-section">
+              <h2 class="ui-section__title">Filter list</h2>
+              <div class="ui-section__component">
+                <div class="ui-section__line">
+                  <ul class="filter-list">
+                    <li class="filter-list__item">
+                      <label class="check">
+                        <input class="check__input" type="checkbox"/><span class="check__box"> </span><span class="check__label">Аккумуляторные батареи</span><span class="check__total">(119)</span>
+                      </label>
+                    </li>
+                    <li class="filter-list__item">
+                      <label class="check">
+                        <input class="check__input" type="checkbox"/><span class="check__box"> </span><span class="check__label">Багажники на крышу</span><span class="check__total">(45)</span>
+                      </label>
+                    </li>
+                    <li class="filter-list__item">
+                      <label class="check">
+                        <input class="check__input" type="checkbox" disabled="disabled"/><span class="check__box"> </span><span class="check__label">Фаркопры</span><span class="check__total">(0)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ui-section__description">
+                <p>Блок: check</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/scripts/bundle.min.js"></script>
+    <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45273525 = new Ya.Metrika({ id:45273525, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45273525" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  </body>
+</html>
