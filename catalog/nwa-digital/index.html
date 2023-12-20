@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Главная страница</title>
+    <meta name="description" content="Описание главной страницы" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="imagetoolbar" content="no" />
+    <meta name="msthemecompatible" content="no" />
+    <meta name="cleartype" content="on" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="application-name" content="Главная страница" />
+    <meta name="msapplication-tooltip" content="Описание главной страницы" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/img/favicons/manifest.json" />
+    <link rel="mask-icon" href="./assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico" />
+    <meta name="msapplication-config" content="./assets/img/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="./styles/build.min.css" rel="stylesheet" />
+  </head>
+  <body class="page">
+    <div class="page__inner">
+      <header class="page__header">
+        <div class="page__main-nav">
+          <nav class="main-nav">
+            <div class="main-nav__inner content-container">
+              <a class="main-nav__logo" href="/catalog/nwa-digital"
+                ><img class="main-logo" src="./assets/img/logo-black.svg" alt="" width="220"
+              /></a>
+              <div class="main-nav__menu js-main-menu">
+                <button class="main-nav__menu-close js-main-menu-close-btn" type="button">
+                  <img class="icon icon_24" src="assets/img/icon-close.svg" alt="" width="24" />
+                </button>
+                <ul class="main-menu">
+                  <li class="main-menu__item">
+                    <a class="main-menu__link" onclick="scrollToDiv('uslugiId')">Услуги</a>
+                  </li>
+                  <li class="main-menu__item">
+                    <a class="main-menu__link" onclick="scrollToDiv('medoborudId')">Медицинское оборудование</a>
+                  </li>
+                  <li class="main-menu__item">
+                    <a class="main-menu__link" onclick="scrollToDiv('yadernayaId')">Ядерная медицина</a>
+                  </li>
+                  <li class="main-menu__item"><a class="main-menu__link" onclick="scrollToDiv('ITId')">IT</a></li>
+                  <li class="main-menu__item">
+                    <a class="main-menu__link" onclick="scrollToDiv('contactiId')">Контакты</a>
+                  </li>
+                  <li class="main-menu__item">
+                    <div class="lang-switcher">
+                      <div class="lang-switcher__item">
+                        <a class="lang-switcher__link main-menu__link is-active" href="#1">RU</a>
+                      </div>
+                      <div class="lang-switcher__item">
+                        <a class="lang-switcher__link main-menu__link" href="#1">EN</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <button class="main-nav__menu-open js-main-menu-open-btn" type="button">
+                <img class="icon icon_24" src="assets/img/icon-burger.svg" alt="" width="24" />
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="page__main">
+        <section class="banner">
+          <div class="banner__inner">
+            <div class="content-container">
+              <div class="banner__content">
+                <h1 class="banner__caption">Системный интегратор<br />высокотехнологичных<br />медицинских сервисов</h1>
+                <p class="banner__text">
+                  NWA Digital – это команда профессионалов, специализирующихся на медицинских технологиях и всем, что их
+                  окружает. Многолетний опыт работы команды позволяет быстро и эффективно добиваться поставленных целей.
+                  Мы создаем возможность применять современные технологии и идти "в ногу со временем".
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section_bg">
+          <div class="section__accent-block accent-block accent-block__over-top">
+            <div class="content-container">
+              <h2 class="accent-block__caption" id="uslugiId">Услуги</h2>
+              <div class="grid grid_ratio-4">
+                <div class="card">
+                  <div class="card__visual">
+                    <img class="icon icon_50" src="assets/img/icon-1.svg" alt="" width="50" />
+                  </div>
+                  <div class="card__body">
+                    <div class="card__content">
+                      <p class="card__text">Консалтинг и информационные услуги в сфере высокотехнологичной медицины</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__visual">
+                    <img class="icon icon_50" src="assets/img/icon-2.svg" alt="" width="50" />
+                  </div>
+                  <div class="card__body">
+                    <div class="card__content">
+                      <p class="card__text">
+                        Консалтинг на этапах проектирования, строительства и ввода в эксплуатацию объектов ядерной
+                        медицины
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__visual">
+                    <img class="icon icon_50" src="assets/img/icon-3.svg" alt="" width="50" />
+                  </div>
+                  <div class="card__body">
+                    <div class="card__content">
+                      <p class="card__text">Лицензирование и сертификация медицинских услуг</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__visual">
+                    <img class="icon icon_50" src="assets/img/icon-4.svg" alt="" width="50" />
+                  </div>
+                  <div class="card__body">
+                    <div class="card__content">
+                      <p class="card__text">
+                        Создание инженерной инфраструктуры для функционирования медицинских сервисов и оборудования
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <h2 class="section__caption" id="medoborudId">Медицинское оборудование</h2>
+            <div class="section__body grid grid_ratio-4">
+              <div class="card card_align-center">
+                <div class="card__visual">
+                  <img class="icon icon_80" src="assets/img/icon-5.svg" alt="" width="80" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Поставка высокотехнологичного медицинского оборудования</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_align-center">
+                <div class="card__visual">
+                  <img class="icon icon_80" src="assets/img/icon-6.svg" alt="" width="80" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Монтаж, наладка и ввод оборудования в эксплуатацию</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_align-center">
+                <div class="card__visual">
+                  <img class="icon icon_80" src="assets/img/icon-7.svg" alt="" width="80" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Обучение персонала по работе с оборудованием и реализации технологий</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_align-center">
+                <div class="card__visual">
+                  <img class="icon icon_80" src="assets/img/icon-8.svg" alt="" width="80" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Гарантийный сервис и пост-гарантийное обслуживание</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="content-container">
+            <h2 class="section__caption" id="yadernayaId">Ядерная медицина</h2>
+            <div class="section__body section__body_shift-left_80 grid grid_ratio-2">
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_50" src="assets/img/icon-9.svg" alt="" width="50" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Поставка источников ионизирующего излучения</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_50" src="assets/img/icon-10.svg" alt="" width="50" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">
+                      Монтаж, техническое обслуживание и модернизация оборудования для ядерной медицины и лучевой
+                      терапии
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_50" src="assets/img/icon-11.svg" alt="" width="50" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Перезарядка радиационных источников</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_50" src="assets/img/icon-12.svg" alt="" width="50" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Дозиметрический контроль и обеспечение физической защиты</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_50" src="assets/img/icon-13.svg" alt="" width="50" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Автоматизация процессов с эксплуатацией радиоизотопных приборов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_50" src="assets/img/icon-14.svg" alt="" width="50" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Утилизация отработанных источников ионизирующего излучения</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_50" src="assets/img/icon-15.svg" alt="" width="50" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Хранение радиоизотопной продукции</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_50" src="assets/img/icon-16.svg" alt="" width="50" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Гарантийный сервис и пост-гарантийное обслуживание</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section_bg">
+          <div class="content-container">
+            <h2 class="section__caption" id="ITId">Информационные технологии</h2>
+            <div class="section__body section__body_shift-left_80 grid">
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_80" src="assets/img/icon-17.svg" alt="" width="80" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Внедрение и сопровождение медицинской информационной системы</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_visual-left card_has-list">
+                <div class="card__visual">
+                  <img class="icon icon_80" src="assets/img/icon-18.svg" alt="" width="80" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Внедрение решений на основе технологий искусственного интеллекта:</p>
+                  </div>
+                  <div class="card__content">
+                    <ul>
+                      <li>Идентификация посетителя по биометрическим данным (FaceId);</li>
+                      <li>Автоматический ввод и распознавание документов;</li>
+                      <li>
+                        автоматическая навигация посетителя по территории объекта за счёт распознавания по лицу и
+                        интерактивных подсказок;
+                      </li>
+                      <li>
+                        Система электронной очереди для доступа к различным сервисам и услугам, интегрированная с
+                        вышеперечисленными сервисами;
+                      </li>
+                      <li>внедрение решений IoT (интернет вещей).</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_80" src="assets/img/icon-19.svg" alt="" width="80" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Поставка IT-оборудования</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_80" src="assets/img/icon-20.svg" alt="" width="80" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Монтаж, наладка и ввод IT-оборудования в эксплуатацию</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_80" src="assets/img/icon-21.svg" alt="" width="80" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Обучение персонала по работе с оборудованием</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card_visual-left">
+                <div class="card__visual">
+                  <img class="icon icon_80" src="assets/img/icon-22.svg" alt="" width="80" />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <p class="card__text">Гарантийный сервис и пост-гарантийное обслуживание</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page__footer">
+        <div class="footer">
+          <div class="footer__top content-container">
+            <img class="main-logo" src="./assets/img/logo-white.svg" alt="" width="220" />
+          </div>
+          <div class="footer__middle content-container" id="contactiId">
+            <span
+              ><b>Телефон:</b><br /><a class="footer__link-contact" href="tel:+74957950623">+7 (495) 795-06-23</a></span
+            ><span
+              ><b>Email:</b><br /><a class="footer__link-contact" href="mailto:info@nwadvisors.com"
+                >info@nwadvisors.com</a
+              ></span
+            ><span><b>Адрес в Москве:</b><br />107045, Россия, г. Москва, ул. Трубная 12</span>
+          </div>
+          <div class="footer__bottom">
+            <div class="content-container"><span>© 2020 NWA Digital</span></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./scripts/bundle.min.js"></script>
+  </body>
+</html>
